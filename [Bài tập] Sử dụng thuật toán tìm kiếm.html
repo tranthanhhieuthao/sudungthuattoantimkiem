@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<script>
+let ArrayPhoneNumber =["0374006604","0973533686","0356662486","0388554718","9467647870",
+                       "0817792886","0392657960","0913712880","0905371991","0972115773"];
+// [86|96|97|98|32|33|34|35|36|37|38|39]
+let regexp =/^[0][3](3|4|5|6|7|8|9)+[0-9]{7}$/g;
+function CheckPhoneNumberOfViettll(Array,regexp) {
+for (let i=0 ;i<Array.length;i++) {
+    let result = Array[i].match(regexp);
+    if (result >0 )   console.log ("so VietTell trong day là:"+" "+result.toString());
+    }
+  }
+ CheckPhoneNumberOfViettll(ArrayPhoneNumber,regexp);
+
+</script>
+</body>
+</html>
